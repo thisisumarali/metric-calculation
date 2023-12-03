@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric-Calculation</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="video/VideoLOOP1.mp4">
+    </video>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Metric-Calculation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Metric-Calculation</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " aria-current="page" href="length.html" role="button"
+                                    aria-expanded="true">
+                                    Length </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="area.html" role="button" aria-expanded="false">
+                                    Area
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="volume.html" role="button" aria-expanded="false">
+                                    Volume
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="mass.html" role="button" aria-expanded="false">
+                                    Mass
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="temperature.html" role="button" aria-expanded="false">
+                                    Temperature
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="Blog.html" role="button" aria-expanded="false">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="center-content">
+            <h1 class="my-3 display-6 text-black">Welcome To Metric-Calculation</h1>
+            <p class="size-p">"Transform measurements effortlessly with our all-in-one metric calculator – seamlessly
+                convert length, temperature, area, and more with just a click!"</p>
+            <a href="#mcc"><button class="mainbtn">Get Started..</button></a>
+        </div>
+        <div class="row" id="mcc">
+            <div class="text-center my-5 mt-5">
+                <h1 class="display-lg-4 mt-5">What is Metric-Calculation?</h1>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-5">
+                    <h2 class="text-black my-lg-4 mx-2 mx-lg-0">About Metric-Calculation</h2>
+                    <p class="size-p my-3 mx-2 mx-lg-0">Metric calculation refers to the process of quantifying or
+                        measuring a
+                        particular attribute, performance, or characteristic using a standardized method or set of
+                        criteria. Metrics are used in various fields and disciplines to assess and evaluate different
+                        aspects of a system, process, product, or performance. The purpose of metric calculation is to
+                        provide objective and measurable data that can be used for analysis, comparison, and
+                        decision-making.</p>
+                    <button type="button" class="btn btn-success btn-ls mx-2 mx-lg-0">View More</button>
+                </div>
+                <div class="col-md-5 m-2 m-lg-0">
+                    <img class="img-fluid" src="images/scale.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="container" id="Scientists">
+            <div class="row">
+                <div class="text-center my-5 mt-5">
+                    <h1 id="#" class="display-4 mt-5">Scientists Role In Metric-Calculation</h1>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-12 col-md-6 col-lg-3 my-2">
+                        <div class="card">
+                            <img src="images/Db_James_Clerk_Maxwell.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-black">James Clerk Maxwell</h5>
+                                <p class="card-text size-p">Propelled by the visionary insights of James Clerk Maxwell,
+                                    this conversion emphasizes the global compati....</p>
+                                <a href="#" class="btn btn-success btn-ls">View more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 my-2">
+                        <div class="card">
+                            <img src="images/Sir_Isaac_Newton.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-black">Sir Isaac Newton</h5>
+                                <p class="card-text size-p">Inspired by the contributions of Sir Isaac Newton, this
+                                    conversion is essential in physics and eng...</p>
+                                <a href="#" class="btn btn-success btn-ls">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 my-2">
+                        <div class="card ">
+                            <img src="images/Michael_Faraday.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-black">Michael Faraday</h5>
+                                <p class="card-text size-p">Rooted in the scientific endeavors of Michael Faraday, this
+                                    conversion finds applications ranging....
+                                </p>
+                                <a href="#" class="btn btn-success btn-ls">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container" id="MeasurementsUNIT">
+            <div class="row">
+                <div class="text-center my-2 mt-5">
+                    <h1 id="#" class="display-4 mt-5">Measurements Units Conversion</h1>
+                </div>
+                <table class="table my-2">
+                    <thead class="thead">
+                        <tr>
+                            <th scope="col" class="text-white">#</th>
+                            <th scope="col" class="text-white">Unit</th>
+                            <th scope="col" class="text-white">Metric Conversion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Inches</td>
+                            <td>Millimeters: Multiply by 25.4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Feet</td>
+                            <td>Meters: Multiply by 0.3048</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Yards</td>
+                            <td>Meters: Multiply by 0.9144</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Miles</td>
+                            <td>Kilometers: Multiply by 1.60934</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Square Inches</td>
+                            <td>Square Millimeters: Multiply by 645.16</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Square Feet</td>
+                            <td>Square Meters: Multiply by 0.092903</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Square Yards</td>
+                            <td>Square Meters: Multiply by 0.836127</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Acres</td>
+                            <td>Hectares: Multiply by 0.404686</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Square Miles</td>
+                            <td>Square Kilometers: Multiply by 2.58999</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Fluid Ounces</td>
+                            <td>Milliliters: Multiply by 29.5735</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Gallons</td>
+                            <td>Liters: Multiply by 3.78541</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Cubic Feet</td>
+                            <td>Cubic Meters: Multiply by 0.0283168</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Cubic Yards</td>
+                            <td>Cubic Meters: Multiply by 0.764554</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Ounces</td>
+                            <td>Grams: Multiply by 28.3495</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Pounds</td>
+                            <td>Kilograms: Multiply by 0.453592</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Short Tons (2000 lb)</td>
+                            <td>Megagrams (Metric Ton): Multiply by 0.907185</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Fahrenheit</td>
+                            <td>Celsius: Subtract 32, then multiply by 5/9</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Celsius</td>
+                            <td>Fahrenheit: Multiply by 9/5, then add 32</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="container mt-2 mb-5" id="FAQ's">
+            <div class="row ">
+                <div class="row">
+                    <div class="text-center my-3 mt-2">
+                        <h1 id="#" class="display-lg-4 mt-5">FAQ's</h1>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    How do i enter number in scientific notation?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse "
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-black">
+                                        <strong class="text-black">Enter a number in sceintific notation.</strong> To
+                                        enter
+                                        a
+                                        number in scientific
+                                        notation, write the
+                                        coefficient (a), insert the multiplication sign (*), write the base (10), and
+                                        specify
+                                        the
+                                        exponent (n). For
+                                        example, 6 * 10^6 or 5.2 * 10^-6. Use the "EE" or "EXP" key on calculators for
+                                        quick
+                                        entry.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is a knot? what is a nautical mile?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-black">
+                                        <strong class="text-black">Knot and nautical mile.</strong> A knot is a unit of
+                                        speed
+                                        used in maritime and
+                                        aviation contexts,
+                                        equivalent to one nautical mile per hour.
+
+                                        A nautical mile is a unit of distance commonly used for navigation, equal to one
+                                        minute
+                                        of
+                                        latitude, or
+                                        approximately 1.15078 statute miles (1.852 kilometers).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    what about rainfall? how do convert between inches of rain, and millimeters of rain?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-black">
+                                        <strong class="text-black">Enter a number in sceintific notataion</strong> To
+                                        convert
+                                        between inches of rain
+                                        and millimeters of
+                                        rain, you can use the following conversion factor:
+                                        1 inch of rain is approximately equal to 25.4 millimeters of rain.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                    What is the difference between the long ton, short ton, and metric ton?
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-black">
+                                        <strong class="text-black">Long ton,Short ton and Metric ton.</strong>Long ton,
+                                        short
+                                        ton, and metric ton are
+                                        different units
+                                        of mass used in different parts of the world. Here's the difference between
+                                        them:
+
+                                        1. Long Ton:
+                                        - A long ton, also known as the imperial ton or UK ton, is a unit of mass
+                                        commonly
+                                        used
+                                        in
+                                        the United
+                                        Kingdom and some other British Commonwealth countries.
+                                        - 1 long ton is equal to 2,240 pounds (approximately 1,016.05 kilograms).
+
+                                        2. Short Ton:
+                                        - A short ton, also known as the US ton or customary ton, is the standard unit
+                                        of
+                                        mass
+                                        in
+                                        the United States.
+                                        - 1 short ton is equal to 2,000 pounds (approximately 907.18 kilograms).
+
+                                        3. Metric Ton:
+                                        - A metric ton, also known as a tonne, is the standard unit of mass in the
+                                        metric
+                                        system
+                                        and
+                                        is widely used
+                                        internationally.
+                                        - 1 metric ton is equal to 1,000 kilograms (approximately 2,204.62 pounds).
+
+                                        In summary, the main difference between these ton units is their mass
+                                        equivalent.
+                                        The
+                                        long
+                                        ton is larger
+                                        than the short ton and the metric ton. The short ton is used in the United
+                                        States,
+                                        while
+                                        the
+                                        metric ton is
+                                        used in most other parts of the world and is the standard ton unit in the
+                                        International
+                                        System of Units
+                                        (SI).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                    At what temperature are Celsius and fahrenheit the same?
+                                </button>
+                            </h2>
+                            <div id="collapsefive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="text-black">
+                                        <strong class="text-black">Celsius and Fahrenheit temperature same
+                                            when</strong>Celsius and Fahrenheit
+                                        temperature scales
+                                        intersect at -40 degrees. This means that -40 degrees Celsius is equivalent
+                                        to
+                                        -40
+                                        degrees Fahrenheit.
+                                        It's the only temperature where the numerical values of both scales are the
+                                        same.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="text-center text-lg-start ">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <div class="me-5 d-none d-lg-block">
+                <span>Follow Us On:</span>
+            </div>
+
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Metric-Calculation
+                        </h6>
+                        <p>
+                            Empowering Precision: Your Trusted Partner in Metric Conversions - Where Accuracy Meets
+                            Efficiency.
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            HOME
+                        </h6>
+                        <p>
+                            <a href="#mcc" class="text-reset">Metric-Calculation</a>
+                        </p>
+                        <p>
+                            <a href="#Scientists" class="text-reset">Scientists</a>
+                        </p>
+                        <p>
+                            <a href="#MeasurementsUNIT" class="text-reset">Measurements Unit</a>
+                        </p>
+                        <p>
+                            <a href="#FAQ's" class="text-reset">FAQ's</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Pages links
+                        </h6>
+                        <p>
+                            <a href="area.html" class="text-reset">Area</a>
+                        </p>
+                        <p>
+                            <a href="length.html" class="text-reset">Length</a>
+                        </p>
+                        <p>
+                            <a href="mass.html" class="text-reset">Mass</a>
+                        </p>
+                        <p>
+                            <a href="temperature.html" class="text-reset">Temperature</a>
+                        </p>
+                        <p>
+                            <a href="blog.html" class="text-reset">Blog</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Karachi Pakistan</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            metric@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 1234-5678-90</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="index.html">metriccalculation.com</a>
+        </div>
+
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+</html>

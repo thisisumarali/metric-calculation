@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric-Calculation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <script src="Functions.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Metric-Calculation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Metric-Calculation</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" aria-current="page" href="length.html" role="button"
+                                    aria-expanded="true">
+                                    Length </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="area.html" role="button" aria-expanded="false">
+                                    Area
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="volume.html" role="button" aria-expanded="false">
+                                    Volume
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="mass.html" role="button" aria-expanded="false">
+                                    Mass
+                                  </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="temperature.html" role="button" aria-expanded="false">
+                                    Temperature
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="blog.html" role="button" aria-expanded="false">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="heading hero text-white text-center py-2">
+            <h1 class="display-4">BLOG</h1>
+        </div>
+        <div class="row my-5 justify-content-around">
+            <div class=" col-12 col-lg-7 my-5">
+                <img src="images/one.jpg" class="img-fluid">
+                <h2 class="text-black f-800 my-4 mx-3">Navigating the Basics: Understanding Length, Temperature, Volume, and
+                    Mass</h2>
+                <h3 class="colorp f-600 mx-3">Introduction:</h3>
+                <p class="size-p mx-3">In the vast realm of measurements, understanding the fundamental units of length,
+                    temperature,
+                    volume, and mass is crucial for both everyday tasks and scientific endeavors. These four dimensions
+                    serve as the building blocks for quantifying the physical world around us. Let's take a closer look
+                    at each of them to gain a better understanding.</p>
+                <h4 class="colorp f-600 mx-3">Length:</h4>
+                <p class="size-p mx-3">Length is one of the most familiar and straightforward measurements, representing the
+                    extent of something from one end to the other. In the International System of Units (SI), the
+                    standard unit for length is the meter (m). However, various units, such as centimeters, kilometers,
+                    and miles, are commonly used in different contexts. Whether you're measuring the height of a
+                    building, the length of a room, or the width of a paper, understanding and using the appropriate
+                    unit is essential for accurate and meaningful communication of dimensions.</p>
+                <h4 class="colorp f-600 mx-3">Temperature</h4>
+                <p class="size-p mx-3">Temperature measures the degree of hotness or coldness of an object or substance. The
+                    SI unit for temperature is the Kelvin (K), but Celsius (°C) and Fahrenheit (°F) are also widely
+                    used. Understanding temperature is vital in a myriad of applications, from cooking and weather
+                    forecasting to industrial processes and scientific research. The Celsius scale is commonly used in
+                    most of the world, while the Fahrenheit scale is still prevalent in the United States. It's crucial
+                    to be familiar with these scales to interpret and communicate temperature effectively.</p>
+                <h4 class="colorp f-600 mx-3">Volume</h4>
+                <p class="size-p mx-3">Volume is the measure of space occupied by a three-dimensional object. The basic unit
+                    of volume in the SI system is the cubic meter (m³). However, liters (L) and milliliters (mL) are
+                    more practical units for everyday use. Whether you're pouring a glass of water, measuring the
+                    capacity of a container, or calculating the volume of a swimming pool, understanding volume is
+                    essential. Learning how to convert between different units of volume ensures clear communication and
+                    accurate calculations in various situations.
+                </p>
+                <h4 class="colorp f-600 mx-3">Mass</h4>
+                <p class="size-p mx-3">Mass is the amount of matter in an object, and it remains constant regardless of its
+                    location. The standard unit for mass in the SI system is the kilogram (kg). Common units such as
+                    grams (g) and milligrams (mg) are often used for smaller quantities. Mass is a fundamental property
+                    in physics, playing a crucial role in understanding the behavior of objects under the influence of
+                    forces like gravity. Whether you're weighing ingredients in the kitchen or conducting experiments in
+                    a laboratory, a solid grasp of mass and its units is indispensable.
+
+                </p>
+                <h4 class="colorp f-600 mx-3">Conclusion</h4>
+                <p class="size-p mx-3">In the diverse world of measurements, length, temperature, volume, and mass are
+                    foundational concepts that permeate our daily lives and scientific pursuits. Developing a clear
+                    understanding of these dimensions and their respective units empowers individuals to navigate
+                    through a wide range of activities, from cooking and home improvement to advanced scientific
+                    research. As we continue to explore and interact with the world around us, the ability to quantify
+                    and communicate measurements accurately remains an essential skill.
+
+                </p>
+            </div>
+            <div class="col-12 col-lg-4 my-5">
+                <h2 style="background-color:#713ABE;" class="text-center pcat">Post Categories</h2>
+                <div>
+                    <div class="post">
+                        <span class="size-p">Area</span>
+                        <span class="size-p">1</span>
+                    </div>
+                    <div class="post">
+                        <span class="size-p">Length</span>
+                        <span class="size-p">2</span>
+                    </div>
+                    <div class="post">
+                        <span class="size-p">Temperature</span>
+                        <span class="size-p">3</span>
+                    </div>
+                    <div class="post">
+                        <span class="size-p">Volume</span>
+                        <span class="size-p">4</span>
+                    </div>
+                    <div class="post">
+                        <span class="size-p">Mass</span>
+                        <span class="size-p">5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-center text-lg-start ">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <div class="me-5 d-none d-lg-block">
+                <span>Follow Us On:</span>
+            </div>
+
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Metric-Calculation
+                        </h6>
+                        <p>
+                            Empowering Precision: Your Trusted Partner in Metric Conversions - Where Accuracy Meets
+                            Efficiency.
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Pages links
+                        </h6>
+                        <p>
+                            <a href="area.html" class="text-reset">Area</a>
+                        </p>
+                        <p>
+                            <a href="length.html" class="text-reset">Length</a>
+                        </p>
+                        <p>
+                            <a href="mass.html" class="text-reset">Mass</a>
+                        </p>
+                        <p>
+                            <a href="temperature.html" class="text-reset">Temperature</a>
+                        </p>
+                        <p>
+                            <a href="blog.html" class="text-reset">Blog</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Karachi Pakistan</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            metric@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 1234-5678-90</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="index.html">metriccalculation.com</a>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

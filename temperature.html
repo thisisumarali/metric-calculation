@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric-Calculation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Metric-Calculation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Metric-Calculation</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                          
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " aria-current="page" href="length.html" role="button"
+                                    aria-expanded="true">
+                                    Length </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link " href="area.html" role="button" aria-expanded="false">
+                                    Area
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="volume.html" role="button" aria-expanded="false">
+                                    Volume
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="mass.html" role="button" aria-expanded="false">
+                                    Mass
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="temperature.html" role="button" aria-expanded="false">
+                                    Temperature
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="blog.html" role="button" aria-expanded="false">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="heading hero text-white text-center py-2">
+            <h1 class="display-4">Temperature Conversion</h1>
+        </div>
+        <div class="row ">
+            <div class="col-12">
+                <!-- <img src="/images/ImageLength1.jpg" class=" img-fluid my-1"> -->
+            </div>
+        </div>
+
+        <div class="row mx-4 mx-lg-1 my-3 justify-content-around">
+            <div class="card my-5 mx-4 col-lg-5">
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="card-header">
+                            <a href="#FartoCel" id="FartoCel" style="text-decoration: none;">
+                                <p class="text-black my-2 display-6 text-center">Fahrenheit To Celcius: </p>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="row justify-content-around">
+                                <p class="mb-3 size-p">Type a value in the Fahrenheit field to convert the value to
+                                    Celcius:</p>
+                                <div class="col-sm-6 col-lg-12 my-3">
+
+                                    <h5>
+                                        <label class="text-black">Fahrenheit: </label>
+                                        <input id="inputFarTocel" class="text-black col-12 col-sm-6 col-lg-12" type="number"
+                                            placeholder="Fahrenheit" oninput="LengthConverterfarTOcel(this.value)"
+                                            onchange="LengthConverterfarTOcel(this.value)">
+                                    </h5>
+                                </div>
+                                <div class="col-sm-6 col-lg-12 my-3">
+                                    <h5 class="text-black ">Celcius: <span id="outputFarTocel" class="colorp"></span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-success" onclick="clearOutputFartoCel()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card my-5 mx-4 col-lg-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-header">
+                            <a href="#Celtofar" id="Celtofar" style="text-decoration: none;">
+                                <p class="text-black my-2 display-6 text-center">Celcius To Fahrenheit: </p>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="row justify-content-around">
+                                <p class="mb-3 size-p">Type a value in the Celcius field to convert the value to
+                                    Fahrenheit:</p>
+                                <div class="col-sm-6 col-lg-12 my-3">
+                                    <h5>
+                                        <label class="text-black">Celcius: </label>
+                                        <input id="inputCelcius" class="text-black col-12 col-sm-6 col-lg-12 " type="number" placeholder="Celcius"
+                                            oninput="temperatureConverterCelToFar(this.value)"
+                                            onchange="temperatureConverterCelToFar(this.value)">
+                                    </h5>
+                                </div>
+                                <div class="col-sm-6 col-lg-12 my-3">
+                                    <h5 class="text-black ">Fahrenheit: <span id="outputCelToFar" class="colorp"></span>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-success" onclick="clearOutputCelToFar()">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row text-center my-1">
+                    <div class="col-12">
+                        <h1 class="colorp">Conversion Techniques: </h1>
+                    </div>
+                </div>
+
+                <div class="row justify-content-evenly my-5">
+                    <div class="col-md-6 my-2">
+                        <h2 class="text-black my-4">Fahrenheit to Celsius:</h2>
+                        <p class="size-p mb-3"><strong class="colorp">Formula:</strong> Celsius = (Fahrenheit - 32) *
+                            5/9 </p>
+                        <p class="size-p"><strong class="colorp">Context: </strong> Developed by Daniel Gabriel
+                            Fahrenheit, the Fahrenheit scale is commonly used in the U.S. This conversion helps bridge
+                            the gap between Fahrenheit and Celsius for temperature measurements.</p>
+                    </div>
+                    <div class="col-md-3 my-2">
+                        <img class="img-fluid" src="images/danielFar.jpeg" alt="Daniel Fahrenheit">
+                    </div>
+                </div>
+
+                <div class="row justify-content-evenly my-5">
+                    <div class="col-md-6 my-2">
+                        <h2 class="text-black my-4">Celsius to Fahrenheit:</h2>
+                        <p class="size-p mb-3"><strong class="colorp">Formula:</strong> Fahrenheit = (Celsius * 9/5) +
+                            32</p>
+                        <p class="size-p"><strong class="colorp">Context: </strong>Celsius, part of the metric system,
+                            is widely used globally. This conversion facilitates the understanding of temperature
+                            readings in both Celsius and Fahrenheit.
+                        </p>
+                    </div>
+                    <div class="col-md-3 my-2">
+                        <img class="img-fluid" src="images/thermometer.png" alt="Daniel Fahrenheit">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="text-center text-lg-start ">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+            <div class="me-5 d-none d-lg-block">
+                <span>Follow Us On:</span>
+            </div>
+
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Metric-Calculation
+                        </h6>
+                        <p>
+                            Empowering Precision: Your Trusted Partner in Metric Conversions - Where Accuracy Meets
+                            Efficiency.
+                        </p>
+                    </div>
+
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Pages links
+                        </h6>
+                        <p>
+                            <a href="area.html" class="text-reset">Area</a>
+                        </p>
+                        <p>
+                            <a href="length.html" class="text-reset">Length</a>
+                        </p>
+                        <p>
+                            <a href="mass.html" class="text-reset">Mass</a>
+                        </p>
+                        <p>
+                            <a href="temperature.html" class="text-reset">Temperature</a>
+                        </p>
+                        <p>
+                            <a href="blog.html" class="text-reset">Blog</a>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Karachi Pakistan</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            metric@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 1234-5678-90</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="index.html">metriccalculation.com</a>
+        </div>
+
+    </footer>
+
+    <script src="Functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
